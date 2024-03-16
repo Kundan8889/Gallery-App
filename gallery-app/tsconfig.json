@@ -1,25 +1,58 @@
 {
   "compilerOptions": {
+    // Set the target ECMAScript version to ES2020
     "target": "ES2020",
+
+    // Allow class fields to be defined with a `define` keyword
     "useDefineForClassFields": true,
+
+    // Specify the libraries to include in the compilation
     "lib": ["ES2020", "DOM", "DOM.Iterable"],
+
+    // Specify the module system to use
     "module": "ESNext",
+
+    // Skip type checking of all declaration files in the `node_modules` directory
     "skipLibCheck": true,
 
+    // Allow `unknown` type in catch variables
+    "useUnknownInCatchVariables": false,
+
     /* Bundler mode */
+    // Specify the module resolution strategy for bundlers
     "moduleResolution": "bundler",
+
+    // Allow importing TypeScript files with the `.ts` extension
     "allowImportingTsExtensions": true,
+
+    // Enable resolving JSON modules
     "resolveJsonModule": true,
+
+    // Treat each file as a separate module
     "isolatedModules": true,
+
+    // Do not emit output files
     "noEmit": true,
+
+    // Specify the JSX compiler option
     "jsx": "react-jsx",
 
     /* Linting */
+    // Enable strict mode
     "strict": true,
+
+    // Report unused variables as errors
     "noUnusedLocals": true,
+
+    // Report unused parameters as errors
     "noUnusedParameters": true,
+
+    // Report fallthrough cases in switch statements as errors
     "noFallthroughCasesInSwitch": true
   },
+  // Specify the files to include in compilation
   "include": ["src"],
+
+  // Specify references to other projects
   "references": [{ "path": "./tsconfig.node.json" }]
 }
